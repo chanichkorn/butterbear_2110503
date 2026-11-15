@@ -1,0 +1,34 @@
+{
+  "name": "butterbear",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Campground booking REST API",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test --test-concurrency=1",
+    "demo": "node scripts/demo.mjs",
+    "demo:env": "node scripts/demo-env.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "luxon": "^3.7.2",
+    "mongoose": "^8.19.1",
+    "nodemailer": "^10.5.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.3.0",
+    "newman": "^6.2.3",
+    "supertest": "^7.1.4"
+  }
+}
